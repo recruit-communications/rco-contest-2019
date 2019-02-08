@@ -6,7 +6,7 @@
 1. ブラウザに [Tampermonkey](https://tampermonkey.net/) をインストールします。<br>
 ※ FirefoxアドオンのGreasemonkeyでは正しくユーザースクリプトが動作しませんので、ご注意ください。
 2. 下記のリンクをクリックし、ユーザースクリプトをインストールします。 <br>
-<a href="https://raw.githubusercontent.com/recruit-communications/rco-contest-2018/master/userscript/rcocon2019.user.js">https://raw.githubusercontent.com/recruit-communications/rco-contest-2018/master/userscript/rcocon2019.user.js</a>
+<a href="https://raw.githubusercontent.com/recruit-communications/rco-contest-2019/master/userscript/rcocon2019.user.js">https://raw.githubusercontent.com/recruit-communications/rco-contest-2019/master/userscript/rcocon2019.user.js</a>
 
 ## 使用方法
 
