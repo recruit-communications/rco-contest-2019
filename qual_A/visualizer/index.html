@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>visualizer - ツーリストXの旅行計画</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style type="text/css"> #visualizer input {height: auto; } </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.7.1/svg.min.js"></script>
+    <script src="./index.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="ui menu">
+        <div class="item">
+            <h1>visualizer - ツーリストXの旅行計画</h1>
+        </div>
+        <div class="right item">
+            <a href="https://github.com/recruit-communications/rco-contest-2019/tree/master/qual_A/visualizer"><i class="code icon"></i>source</a>
+        </div>
+    </div>
+
+    <div class="ui container center aligned">
+        <div class="ui form">
+
+            <div class="inline fields">
+                <div class="field">
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            input file
+                        </div>
+                        <input id="inputFile" type="file" />
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            output file
+                        </div>
+                        <input id="outputFile" type="file" />
+                    </div>
+                </div>
+                <div class="field">
+                    <button id="reloadButton" class="ui primary button disabled"><i class="sync icon"></i> reload</button>
+                </div>
+            </div>
+
+            <div class="inline fields">
+                <div class="field">
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            average
+                        </div>
+                        <input id="averageInput" type="text" readonly />
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui labeled input">
+                        <div class="ui label">
+                            variance
+                        </div>
+                        <input id="varianceInput" type="text" readonly />
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui labeled input">
+                        <div class="ui label teal">
+                            score
+                        </div>
+                        <input id="scoreInput" type="text" readonly />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="drawing" style="width: 822px; height: 952px; border: black solid 1px; margin-left: 1px; "></div>
+
+        <div class="ui form">
+            <div class="inline fields">
+                <div class="field">
+                    <span id="saveAsImage" class="ui button"><i class="download icon"></i>save as image</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="canvas" width="820" height="950" display="none" style="display: none;"></canvas>
+    <div id="tooltip" style="position: fixed; display: none; background: cornsilk; border: 1px solid black; border-radius: 5px; padding: 5px; z-index: 1000"></div>
+
+</body>
+</html>
