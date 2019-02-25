@@ -74,7 +74,9 @@
                 line.push(`<span class="glyphicon glyphicon-search black" aria-hidden="true" data-html="true" data-toggle="tooltip" title="" data-original-title="${name}さんの提出を見る">`);
                 line.push('</span></a>');
             }
-            line.push('</span></td>');
+            line.push('</span>');
+            line.push(`<span class='standings-affiliation'>${d.Affiliation}</span>`);
+            line.push('</td>');
 
             // コンテスト
             if (location.pathname.endsWith('/group')) {
