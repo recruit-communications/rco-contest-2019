@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AtCoder Standings for RCO Contest
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Provide standings for Nihonbashi Half Marathon
 // @author       Recruit Communications Co., Ltd.
 // @license      MIT License
