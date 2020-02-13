@@ -16,10 +16,18 @@
 ```bash
 python generator.py 12345 > input.txt
 ```
+または
+```bash
+python3 generator.py 12345 > input.txt
+```
 
 # 得点計算
 テストケースのテキストファイルと、自分のプログラムの出力結果のテキストファイルから、テストケースに対する得点を計算することができます。以下のコマンドでは、 `input.txt` というテキストファイルに保存されたテストケースに対する `output.txt` というテキストファイル内の出力から得られる得点を計算しています。
 
 ```bash
 python judge.py input.txt output.txt
+```
+または
+```bash
+python3 judge.py input.txt output.txt
 ```
